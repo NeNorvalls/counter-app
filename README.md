@@ -1,2 +1,2 @@
 # counter-app
-Additiional learning from Scrimba: Javascript
+Additional learning from Scrimba: Javascript
