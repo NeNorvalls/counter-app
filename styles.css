@@ -1,66 +1,67 @@
-body {
-  display: flex;
-  background-color: #272a38;
-  min-width: 100vw;
-  min-height: 100vh;
+body,
+html {
   margin: 0;
-  color: #fff;
+  padding: 0;
+  height: 100%;
+  background-image: url("https://images.unsplash.com/photo-1548625361-2341a17236b4");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.container {
+  position: relative;
+  width: 360px;
+  max-height: 460px;
+  display: flex;
   flex-direction: column;
-  font-family: Arial, sans-serif;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: #0c1f1fb3;
+  border-radius: 10px;
+  padding: 20px;
 }
 
 h1 {
-  text-align: center;
-  font-size: 38px;
+  font-size: 32px;
+  color: white;
 }
 
 h2 {
-  font-size: 30px;
-  font-weight: bold;
-  top: 0;
+  font-size: 48px;
+  color: white;
+}
+
+button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
   text-align: center;
-}
-
-#increment-btn,
-#save-btn {
-  width: 160px;
-  height: 35px;
-  border-radius: 10px;
-  border: 2px solid #fff;
-  color: #f2f2f2;
-  margin: 10px auto;
   font-size: 16px;
-  font-weight: bolder;
-  padding: 5px;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
 }
 
-#increment-btn {
-  background-color: royalblue;
-}
-
-#increment-btn:hover {
-  background-color: darkred;
-}
-
-#save-btn {
-  background-color: #1da81d;
-}
-
-#save-btn:hover {
-  background-color: goldenrod;
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.05); /* Add scale effect on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
 }
 
 #save-el {
   font-weight: bold;
-  color: #ccc;
-  word-spacing: 5px;
-  font-size: 24px;
+  font-size: 20px;
+  margin-top: 20px;
+  color: white;
 }
 
-@media (max-width: 600px) {
-  h1 {
-    font-size: 28px;
-  }
+#save-el span {
+  color: #ffca28;
+  font-weight: normal;
 }
