@@ -20,22 +20,43 @@ h2 {
   font-size: 30px;
   font-weight: bold;
   top: 0;
+  text-align: center;
 }
 
-button {
-  background-color: royalblue;
+#increment-btn,
+#save-btn {
   width: 160px;
   height: 35px;
   border-radius: 10px;
-  border: none;
+  border: 2px solid #fff;
   color: #f2f2f2;
-  margin: 0 auto;
+  margin: 10px auto;
   font-size: 16px;
   font-weight: bolder;
+  padding: 5px;
 }
 
-button:hover {
+#increment-btn {
+  background-color: royalblue;
+}
+
+#increment-btn:hover {
   background-color: darkred;
+}
+
+#save-btn {
+  background-color: #1da81d;
+}
+
+#save-btn:hover {
+  background-color: goldenrod;
+}
+
+#save-el {
+  font-weight: bold;
+  color: #ccc;
+  word-spacing: 5px;
+  font-size: 24px;
 }
 
 @media (max-width: 600px) {

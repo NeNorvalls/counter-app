@@ -1,34 +1,16 @@
-// document.getElementById("count-el").innerText = 5;
+let saveEl = document.getElementById("save-el");
+let countEl = document.getElementById("count-el");
+let incrementBtn = document.getElementById("increment-btn");
+let saveBtn = document.getElementById("save-btn");
+let count = 0;
 
-// let myAge = 43;
-// console.log(myAge);
+function increment() {
+  console.log("Increment function called.");
+  count += 1;
+  countEl.innerText = count;
+}
 
-// let firstBatch = 5;
-// let secondBatch = 7;
-
-// let count = firstBatch + secondBatch;
-
-// console.log(count);
-
-// let myAge = 43;
-// let humanDogRatio = 7;
-
-// let myDogAge = myAge * humanDogRatio;
-// console.log(myDogAge);
-
-// let count = 5;
-
-// //count + 1
-// count = count + 2;
-
-// console.log(count);
-
-// let bonusPoints = 50;
-
-// bonusPoints = bonusPoints + 50;
-// bonusPoints = bonusPoints - 75;
-// bonusPoints = bonusPoints + 45;
-
-// console.log(bonusPoints);
-
-document.getElementById("increment-btn");
+function save() {
+  let countStr = " " + count + " - ";
+  saveEl.innerText += countStr;
+}
